@@ -1,4 +1,4 @@
-const canapeStorage = JSON.parse(localStorage.getItem("canapeStorage"))
+const canapeStorage = JSON.parse(localStorage.getItem("canapeStorage"))??[]
 const url_api_produits = `http://localhost:3000/api/products`
 
 // fonction contenant un fetch récupérant les infos de l'API
