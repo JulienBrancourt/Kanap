@@ -194,22 +194,6 @@ boutonCommander.addEventListener("click", (event) => {
     products,
   }
 
-  /*if(canapeStorage?.length === 0){
-    window.alert("Le panier est vide")
-  }
-  else{
-    if(inputPrenom.value === "" || inputNom.value === "" || inputAdresse.value === "" || inputVille.value === "" || inputMail.value == ""){
-      window.alert("Veuillez renseigner les 5 champs Prénom, Nom, Adresse, Ville et Mail")
-    }
-    else{
-       if(erreurPrenom.textContent === "" && erreurNom.textContent === "" && erreurAdresse.textContent === "" && erreurVille.textContent === "" && erreurMail.textContent === ""){
-        fetchCommande(infosCommande)
-       }
-       else{
-        window.alert("Les informations saisies ne sont pas correctes")
-       }
-    }
-  }*/
   if(isCommandeOk(canapeStorage)) {
     fetchCommande(infosCommande)
   }
@@ -235,6 +219,7 @@ function fetchCommande(infosCommande) {
   })
 }
 
+//fonction vérifiant la présence de produit et le contenu des champs du formulaire
 function isCommandeOk(canapeStorage){
   if(canapeStorage?.length === 0){
     window.alert("Le panier est vide")
