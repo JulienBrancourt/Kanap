@@ -1,4 +1,4 @@
-# Kanap : site e-commer
+# Kanap : site e-commerce
 ## Objectif du projet
 Projet 5 du parcours Développeur Web Openclassrooms
 Réalisation de la partie front-end Javascript du site e-commerce Kanap (marque de canapés)
